@@ -1,5 +1,5 @@
 {
-  "name": "festival-model",
+  "name": "festivals-model",
   "version": "0.1.0",
   "description": "Festivals model.",
   "main": "./index.js",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/festivals-platform/npm-festival-model.git"
+    "url": "https://github.com/festivals-platform/npm-festivals-model.git"
   },
   "bugs": {
-    "url": "https://github.com/festivals-platform/npm-festival-model/issues"
+    "url": "https://github.com/festivals-platform/npm-festivals-model/issues"
   },
   "keywords": [
     "festival",
@@ -40,11 +40,11 @@
     "email": "zenedith@wp.pl"
   },
   "license": "MIT",
-  "homepage": "https://github.com/festivals-platform/npm-festival-model",
+  "homepage": "https://github.com/festivals-platform/npm-festivals-model",
   "engines": {
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "festival-model@0.1.0",
-  "_from": "festival-model@^0.1.0"
+  "_id": "festivals-model@0.1.0",
+  "_from": "festivals-model@^0.1.0"
 }

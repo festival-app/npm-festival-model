@@ -1,10 +1,10 @@
-# festival-model
-[![npm version](https://badge.fury.io/js/festival-model.svg)](http://badge.fury.io/js/festival-model)
-[![Coverage Status](https://coveralls.io/repos/festivals-platform/npm-festival-model/badge.svg?branch=master)](https://coveralls.io/r/festivals-platform/npm-festival-model?branch=master)
-[![Build Status](https://travis-ci.org/festivals-platform/npm-festival-model.svg?branch=master)](https://travis-ci.org/festivals-platform/npm-festival-model)
-[![Dependency Status](https://david-dm.org/festivals-platform/npm-festival-model.svg)](https://david-dm.org/festivals-platform/npm-festival-model)
+# festivals-model
+[![npm version](https://badge.fury.io/js/festivals-model.svg)](http://badge.fury.io/js/festivals-model)
+[![Coverage Status](https://coveralls.io/repos/festivals-platform/npm-festivals-model/badge.svg?branch=master)](https://coveralls.io/r/festivals-platform/npm-festivals-model?branch=master)
+[![Build Status](https://travis-ci.org/festivals-platform/npm-festivals-model.svg?branch=master)](https://travis-ci.org/festivals-platform/npm-festivals-model)
+[![Dependency Status](https://david-dm.org/festivals-platform/npm-festivals-model.svg)](https://david-dm.org/festivals-platform/npm-festivals-model)
 
-[![NPM](https://nodei.co/npm/festival-model.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/festival-model/)
+[![NPM](https://nodei.co/npm/festivals-model.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/festivals-model/)
 
 Festival model.
 
@@ -13,7 +13,7 @@ Festival model.
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install festival-model --save
+npm install festivals-model --save
 ```
 
 
