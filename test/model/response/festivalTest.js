@@ -11,7 +11,9 @@ describe('festival model test', function () {
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
   var duration = 'duration';
-  var location = {location: 'location'};
+  var locations = [
+    {locations: 'locations'}
+  ];
 
   it('should create model', function (done) {
 
@@ -23,7 +25,7 @@ describe('festival model test', function () {
       createdAt,
       updatedAt,
       duration,
-      location
+      locations
     );
 
     should.exist(festivalModel);
@@ -34,7 +36,7 @@ describe('festival model test', function () {
     festivalModel.createdAt.should.be.equal(createdAt);
     festivalModel.updatedAt.should.be.equal(updatedAt);
     festivalModel.duration.should.be.equal(duration);
-    festivalModel.location.should.be.equal(location);
+    festivalModel.locations.should.be.equal(locations);
 
     done();
   });
@@ -49,7 +51,7 @@ describe('festival model test', function () {
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
       .withDuration(duration)
-      .withLocation(location)
+      .withLocations(locations)
       .build();
 
     should.exist(festivalModel);
@@ -60,7 +62,7 @@ describe('festival model test', function () {
     festivalModel.createdAt.should.be.equal(createdAt);
     festivalModel.updatedAt.should.be.equal(updatedAt);
     festivalModel.duration.should.be.equal(duration);
-    festivalModel.location.should.be.equal(location);
+    festivalModel.locations.should.be.equal(locations);
 
     done();
   });
