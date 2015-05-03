@@ -11,6 +11,27 @@ describe('index test', function () {
     done();
   });
 
+  it('should export EventNotFoundError error', function (done) {
+
+    var EventNotFoundError = index.error.EventNotFoundError;
+    should.exist(EventNotFoundError);
+    done();
+  });
+
+  it('should export EventPlaceNotFoundError error', function (done) {
+
+    var EventPlaceNotFoundError = index.error.EventPlaceNotFoundError;
+    should.exist(EventPlaceNotFoundError);
+    done();
+  });
+
+  it('should export FestivalNotFoundError error', function (done) {
+
+    var FestivalNotFoundError = index.error.FestivalNotFoundError;
+    should.exist(FestivalNotFoundError);
+    done();
+  });
+
   it('should export searchFestivalsRequest', function (done) {
 
     var searchFestivalsRequest = index.model.searchFestivalsRequest;

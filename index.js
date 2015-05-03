@@ -3,7 +3,10 @@ var meta = require('./lib/meta');
 module.exports = {
 
   error: {
-    ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError,
+    EventNotFoundError: require('./lib/error/eventNotFoundError').EventNotFoundError,
+    EventPlaceNotFoundError: require('./lib/error/eventPlaceNotFoundError').EventPlaceNotFoundError,
+    FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
+    ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
   },
   model: {
     /**

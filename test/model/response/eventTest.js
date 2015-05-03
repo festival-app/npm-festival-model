@@ -8,6 +8,7 @@ describe('event model test', function () {
   var name = 'name';
   var description = 'description';
   var tags = ['tags'];
+  var mainImage = {small: 'mainImage'};
   var duration = {'duration': 111};
   var place = 'place';
   var category = 'category';
@@ -21,6 +22,7 @@ describe('event model test', function () {
       name,
       description,
       tags,
+      mainImage,
       duration,
       place,
       category,
@@ -33,6 +35,7 @@ describe('event model test', function () {
     eventModel.name.should.be.equal(name);
     eventModel.description.should.be.equal(description);
     eventModel.tags.should.be.equal(tags);
+    eventModel.mainImage.should.be.equal(mainImage);
     eventModel.duration.should.be.equal(duration);
     eventModel.place.should.be.equal(place);
     eventModel.category.should.be.equal(category);
@@ -49,6 +52,7 @@ describe('event model test', function () {
       .withName(name)
       .withDescription(description)
       .withTags(tags)
+      .withMainImage(mainImage)
       .withDuration(duration)
       .withPlace(place)
       .withCategory(category)
@@ -61,6 +65,7 @@ describe('event model test', function () {
     eventModel.name.should.be.equal(name);
     eventModel.description.should.be.equal(description);
     eventModel.tags.should.be.equal(tags);
+    eventModel.mainImage.should.be.equal(mainImage);
     eventModel.duration.should.be.equal(duration);
     eventModel.place.should.be.equal(place);
     eventModel.category.should.be.equal(category);

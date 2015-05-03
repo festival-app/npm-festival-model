@@ -4,20 +4,20 @@ var searchFestivalsRequest = require('../../lib/model/searchFestivalsRequest');
 
 describe('searchFestivalsRequest model test', function () {
 
-  var tags = 'AAS 12345';
+  var name = 'name';
   var country = 'PL';
   var startAt = '12-01-1988';
 
   it('should create model', function (done) {
 
     var model = new searchFestivalsRequest.SearchFestivalsRequest(
-      tags,
+      name,
       country,
       startAt
     );
 
     should.exist(model);
-    model.tags.should.be.equal(tags);
+    model.name.should.be.equal(name);
     model.country.should.be.equal(country);
     model.startAt.should.be.equal(startAt);
 
@@ -27,13 +27,13 @@ describe('searchFestivalsRequest model test', function () {
   it('should create model by builder', function (done) {
 
     var model = new searchFestivalsRequest.SearchFestivalsRequestBuilder()
-      .withTags(tags)
+      .withName(name)
       .withCountry(country)
       .withStartAt(startAt)
       .build();
 
     should.exist(model);
-    model.tags.should.be.equal(tags);
+    model.name.should.be.equal(name);
     model.country.should.be.equal(country);
     model.startAt.should.be.equal(startAt);
 

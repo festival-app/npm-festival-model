@@ -8,6 +8,7 @@ describe('festival model test', function () {
   var name = 'name';
   var description = 'description';
   var tags = ['tags'];
+  var mainImage = {small: 'mainImage'};
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
   var duration = {'duration': 111};
@@ -22,10 +23,11 @@ describe('festival model test', function () {
       name,
       description,
       tags,
-      createdAt,
-      updatedAt,
+      mainImage,
       duration,
-      locations
+      locations,
+      createdAt,
+      updatedAt
     );
 
     should.exist(festivalModel);
@@ -33,6 +35,7 @@ describe('festival model test', function () {
     festivalModel.name.should.be.equal(name);
     festivalModel.description.should.be.equal(description);
     festivalModel.tags.should.be.equal(tags);
+    festivalModel.mainImage.should.be.equal(mainImage);
     festivalModel.createdAt.should.be.equal(createdAt);
     festivalModel.updatedAt.should.be.equal(updatedAt);
     festivalModel.duration.should.be.equal(duration);
@@ -48,6 +51,7 @@ describe('festival model test', function () {
       .withName(name)
       .withDescription(description)
       .withTags(tags)
+      .withMainImage(mainImage)
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
       .withDuration(duration)
@@ -59,6 +63,7 @@ describe('festival model test', function () {
     festivalModel.name.should.be.equal(name);
     festivalModel.description.should.be.equal(description);
     festivalModel.tags.should.be.equal(tags);
+    festivalModel.mainImage.should.be.equal(mainImage);
     festivalModel.createdAt.should.be.equal(createdAt);
     festivalModel.updatedAt.should.be.equal(updatedAt);
     festivalModel.duration.should.be.equal(duration);
