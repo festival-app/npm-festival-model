@@ -10,6 +10,14 @@ module.exports = {
   },
   model: {
     /**
+     * the countryEnum model and builder.
+     * @property countryEnum
+     * @type countryEnum
+     * @static
+     */
+    countryEnum: require('./lib/model/countryEnum'),
+
+    /**
      * the searchFestivalsRequest model and builder.
      * @property searchFestivalsRequest
      * @type searchFestivalsRequest
@@ -56,6 +64,14 @@ module.exports = {
      * @static
      */
     festivalsCollection: require('./lib/model/response/festivalsCollection'),
+
+    /**
+     * the image model and builder.
+     * @property image
+     * @type image
+     * @static
+     */
+    image: require('./lib/model/response/image'),
 
     /**
      * the location model and builder.

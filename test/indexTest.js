@@ -86,6 +86,15 @@ describe('index test', function () {
     done();
   });
 
+  it('should export image', function (done) {
+
+    var image = index.model.image;
+    should.exist(image);
+    should.exist(image.Image);
+    should.exist(image.ImageBuilder);
+    done();
+  });
+
   it('should export location', function (done) {
 
     var location = index.model.location;
