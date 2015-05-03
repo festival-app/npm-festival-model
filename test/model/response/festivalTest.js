@@ -10,7 +10,7 @@ describe('festival model test', function () {
   var tags = ['tags'];
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
-  var duration = 'duration';
+  var duration = {'duration': 111};
   var locations = [
     {locations: 'locations'}
   ];
