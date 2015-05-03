@@ -1,0 +1,50 @@
+{
+  "name": "festival-model",
+  "version": "0.1.0",
+  "description": "Festivals model.",
+  "main": "./index.js",
+  "dependencies": {
+    "assert-plus": "^0.1.5",
+    "async": "^0.9.0",
+    "winston": "^1.0.0",
+    "winston-loggly": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "config": "^1.12.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "type-detect": "^1.0.0"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "mocha --recursive test",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --recursive test",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/festivals-platform/npm-festival-model.git"
+  },
+  "bugs": {
+    "url": "https://github.com/festivals-platform/npm-festival-model/issues"
+  },
+  "keywords": [
+    "festival",
+    "convent",
+    "platform",
+    "app"
+  ],
+  "author": {
+    "name": "Zenedith",
+    "email": "zenedith@wp.pl"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/festivals-platform/npm-festival-model",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "_id": "festival-model@0.1.0",
+  "_from": "festival-model@^0.1.0"
+}
