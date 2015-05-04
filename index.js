@@ -3,7 +3,7 @@ var meta = require('./lib/meta');
 module.exports = {
 
   error: {
-    EventNotFoundError: require('./lib/error/eventNotFoundError').EventNotFoundError,
+    FestivalEventNotFoundError: require('./lib/error/festivalEventNotFoundError').FestivalEventNotFoundError,
     EventPlaceNotFoundError: require('./lib/error/eventPlaceNotFoundError').EventPlaceNotFoundError,
     FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
@@ -24,6 +24,14 @@ module.exports = {
      * @static
      */
     searchFestivalsRequest: require('./lib/model/searchFestivalsRequest'),
+
+    /**
+     * the searchFestivalEventsRequest model and builder.
+     * @property searchFestivalEventsRequest
+     * @type searchFestivalEventsRequest
+     * @static
+     */
+    searchFestivalEventsRequest: require('./lib/model/searchFestivalEventsRequest'),
 
     /**
      * the duration model and builder.

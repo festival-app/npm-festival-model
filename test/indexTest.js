@@ -11,10 +11,10 @@ describe('index test', function () {
     done();
   });
 
-  it('should export EventNotFoundError error', function (done) {
+  it('should export FestivalEventNotFoundError error', function (done) {
 
-    var EventNotFoundError = index.error.EventNotFoundError;
-    should.exist(EventNotFoundError);
+    var FestivalEventNotFoundError = index.error.FestivalEventNotFoundError;
+    should.exist(FestivalEventNotFoundError);
     done();
   });
 
@@ -38,6 +38,15 @@ describe('index test', function () {
     should.exist(searchFestivalsRequest);
     should.exist(searchFestivalsRequest.SearchFestivalsRequest);
     should.exist(searchFestivalsRequest.SearchFestivalsRequestBuilder);
+    done();
+  });
+
+  it('should export searchFestivalEventsRequest', function (done) {
+
+    var searchFestivalEventsRequest = index.model.searchFestivalEventsRequest;
+    should.exist(searchFestivalEventsRequest);
+    should.exist(searchFestivalEventsRequest.SearchFestivalEventsRequest);
+    should.exist(searchFestivalEventsRequest.SearchFestivalEventsRequestBuilder);
     done();
   });
 
