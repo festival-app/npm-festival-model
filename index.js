@@ -5,6 +5,7 @@ module.exports = {
   error: {
     FestivalEventNotFoundError: require('./lib/error/festivalEventNotFoundError').FestivalEventNotFoundError,
     FestivalPlaceNotFoundError: require('./lib/error/festivalPlaceNotFoundError').FestivalPlaceNotFoundError,
+    FestivalCategoryNotFoundError: require('./lib/error/festivalCategoryNotFoundError').FestivalCategoryNotFoundError,
     FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
   },

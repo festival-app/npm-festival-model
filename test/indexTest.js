@@ -25,6 +25,13 @@ describe('index test', function () {
     done();
   });
 
+  it('should export FestivalCategoryNotFoundError error', function (done) {
+
+    var FestivalCategoryNotFoundError = index.error.FestivalCategoryNotFoundError;
+    should.exist(FestivalCategoryNotFoundError);
+    done();
+  });
+
   it('should export FestivalNotFoundError error', function (done) {
 
     var FestivalNotFoundError = index.error.FestivalNotFoundError;
