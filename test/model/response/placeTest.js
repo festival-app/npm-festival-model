@@ -5,24 +5,30 @@ var place = require('../../../lib/model/response/place');
 describe('place model test', function () {
 
   var id = 'id';
-  var parent = 'parent';
   var name = 'name';
+  var breadcrumbs = ['breadcrumbs'];
   var openingTimes = [{from: 'openingTimes'}];
+  var createdAt = 'createdAt';
+  var updatedAt = 'updatedAt';
 
   it('should create model', function (done) {
 
     var placeModel = new place.Place(
       id,
-      parent,
       name,
-      openingTimes
+      breadcrumbs,
+      openingTimes,
+      createdAt,
+      updatedAt
     );
 
     should.exist(placeModel);
     placeModel.id.should.be.equal(id);
-    placeModel.parent.should.be.equal(parent);
     placeModel.name.should.be.equal(name);
+    placeModel.breadcrumbs.should.be.equal(breadcrumbs);
     placeModel.openingTimes.should.be.equal(openingTimes);
+    placeModel.createdAt.should.be.equal(createdAt);
+    placeModel.updatedAt.should.be.equal(updatedAt);
 
     done();
   });
@@ -31,16 +37,20 @@ describe('place model test', function () {
 
     var placeModel = new place.PlaceBuilder()
       .withId(id)
-      .withParent(parent)
       .withName(name)
+      .withBreadcrumbs(breadcrumbs)
       .withOpeningTimes(openingTimes)
+      .withCreatedAt(createdAt)
+      .withUpdatedAt(updatedAt)
       .build();
 
     should.exist(placeModel);
     placeModel.id.should.be.equal(id);
-    placeModel.parent.should.be.equal(parent);
     placeModel.name.should.be.equal(name);
+    placeModel.breadcrumbs.should.be.equal(breadcrumbs);
     placeModel.openingTimes.should.be.equal(openingTimes);
+    placeModel.createdAt.should.be.equal(createdAt);
+    placeModel.updatedAt.should.be.equal(updatedAt);
 
     done();
   });

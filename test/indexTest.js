@@ -18,10 +18,10 @@ describe('index test', function () {
     done();
   });
 
-  it('should export EventPlaceNotFoundError error', function (done) {
+  it('should export FestivalPlaceNotFoundError error', function (done) {
 
-    var EventPlaceNotFoundError = index.error.EventPlaceNotFoundError;
-    should.exist(EventPlaceNotFoundError);
+    var FestivalPlaceNotFoundError = index.error.FestivalPlaceNotFoundError;
+    should.exist(FestivalPlaceNotFoundError);
     done();
   });
 
@@ -47,6 +47,24 @@ describe('index test', function () {
     should.exist(searchFestivalEventsRequest);
     should.exist(searchFestivalEventsRequest.SearchFestivalEventsRequest);
     should.exist(searchFestivalEventsRequest.SearchFestivalEventsRequestBuilder);
+    done();
+  });
+
+  it('should export searchFestivalPlacesRequest', function (done) {
+
+    var searchFestivalPlacesRequest = index.model.searchFestivalPlacesRequest;
+    should.exist(searchFestivalPlacesRequest);
+    should.exist(searchFestivalPlacesRequest.SearchFestivalPlacesRequest);
+    should.exist(searchFestivalPlacesRequest.SearchFestivalPlacesRequestBuilder);
+    done();
+  });
+
+  it('should export searchFestivalCategoriesRequest', function (done) {
+
+    var searchFestivalCategoriesRequest = index.model.searchFestivalCategoriesRequest;
+    should.exist(searchFestivalCategoriesRequest);
+    should.exist(searchFestivalCategoriesRequest.SearchFestivalCategoriesRequest);
+    should.exist(searchFestivalCategoriesRequest.SearchFestivalCategoriesRequestBuilder);
     done();
   });
 
@@ -119,6 +137,33 @@ describe('index test', function () {
     should.exist(place);
     should.exist(place.Place);
     should.exist(place.PlaceBuilder);
+    done();
+  });
+
+  it('should export places collection', function (done) {
+
+    var placesCollection = index.model.placesCollection;
+    should.exist(placesCollection);
+    should.exist(placesCollection.PlacesCollection);
+    should.exist(placesCollection.PlacesCollectionBuilder);
+    done();
+  });
+
+  it('should export category collection', function (done) {
+
+    var category = index.model.category;
+    should.exist(category);
+    should.exist(category.Category);
+    should.exist(category.CategoryBuilder);
+    done();
+  });
+
+  it('should export categories collection', function (done) {
+
+    var categoriesCollection = index.model.categoriesCollection;
+    should.exist(categoriesCollection);
+    should.exist(categoriesCollection.CategoriesCollection);
+    should.exist(categoriesCollection.CategoriesCollectionBuilder);
     done();
   });
 

@@ -4,7 +4,7 @@ module.exports = {
 
   error: {
     FestivalEventNotFoundError: require('./lib/error/festivalEventNotFoundError').FestivalEventNotFoundError,
-    EventPlaceNotFoundError: require('./lib/error/eventPlaceNotFoundError').EventPlaceNotFoundError,
+    FestivalPlaceNotFoundError: require('./lib/error/festivalPlaceNotFoundError').FestivalPlaceNotFoundError,
     FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
   },
@@ -32,6 +32,22 @@ module.exports = {
      * @static
      */
     searchFestivalEventsRequest: require('./lib/model/searchFestivalEventsRequest'),
+
+    /**
+     * the searchFestivalPlacesRequest model and builder.
+     * @property searchFestivalPlacesRequest
+     * @type searchFestivalPlacesRequest
+     * @static
+     */
+    searchFestivalPlacesRequest: require('./lib/model/searchFestivalPlacesRequest'),
+
+    /**
+     * the searchFestivalCategoriesRequest model and builder.
+     * @property searchFestivalCategoriesRequest
+     * @type searchFestivalCategoriesRequest
+     * @static
+     */
+    searchFestivalCategoriesRequest: require('./lib/model/searchFestivalCategoriesRequest'),
 
     /**
      * the duration model and builder.
@@ -95,7 +111,31 @@ module.exports = {
      * @type place
      * @static
      */
-    place: require('./lib/model/response/place')
+    place: require('./lib/model/response/place'),
+
+    /**
+     * the placesCollection model and builder.
+     * @property placesCollection
+     * @type placesCollection
+     * @static
+     */
+    placesCollection: require('./lib/model/response/placesCollection'),
+
+    /**
+     * the category model and builder.
+     * @property category
+     * @type category
+     * @static
+     */
+    category: require('./lib/model/response/category'),
+
+    /**
+     * the categoriesCollection model and builder.
+     * @property categoriesCollection
+     * @type categoriesCollection
+     * @static
+     */
+    categoriesCollection: require('./lib/model/response/categoriesCollection')
   },
 
   /**
