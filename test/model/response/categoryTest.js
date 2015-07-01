@@ -6,26 +6,26 @@ describe('category model test', function () {
 
   var id = 'id';
   var name = 'name';
-  var breadcrumbs = ['breadcrumbs'];
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
+  var parent = 'parent';
 
   it('should create model', function (done) {
 
     var categoryModel = new category.Category(
       id,
       name,
-      breadcrumbs,
       createdAt,
-      updatedAt
+      updatedAt,
+      parent
     );
 
     should.exist(categoryModel);
     categoryModel.id.should.be.equal(id);
     categoryModel.name.should.be.equal(name);
-    categoryModel.breadcrumbs.should.be.equal(breadcrumbs);
     categoryModel.createdAt.should.be.equal(createdAt);
     categoryModel.updatedAt.should.be.equal(updatedAt);
+    categoryModel.parent.should.be.equal(parent);
 
     done();
   });
@@ -35,17 +35,17 @@ describe('category model test', function () {
     var categoryModel = new category.CategoryBuilder()
       .withId(id)
       .withName(name)
-      .withBreadcrumbs(breadcrumbs)
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
+      .withParent(parent)
       .build();
 
     should.exist(categoryModel);
     categoryModel.id.should.be.equal(id);
     categoryModel.name.should.be.equal(name);
-    categoryModel.breadcrumbs.should.be.equal(breadcrumbs);
     categoryModel.createdAt.should.be.equal(createdAt);
     categoryModel.updatedAt.should.be.equal(updatedAt);
+    categoryModel.parent.should.be.equal(parent);
 
     done();
   });

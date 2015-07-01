@@ -109,7 +109,7 @@ module.exports = {
     /**
      * the place model and builder.
      * @property place
-     * @type place
+     * @type eventPlace
      * @static
      */
     place: require('./lib/model/response/place'),
