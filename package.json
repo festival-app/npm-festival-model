@@ -5,14 +5,14 @@
   "main": "./index.js",
   "dependencies": {
     "assert-plus": "^0.1.5",
-    "async": "^1.2.1",
+    "async": "^1.3.0",
     "winston": "^1.0.1",
     "winston-loggly": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
     "config": "^1.14.0",
-    "istanbul": "^0.3.16",
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
     "type-detect": "^1.0.0"
   },
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/festivals-platform/npm-festivals-model.git"
+    "url": "git+https://github.com/festivals-platform/npm-festivals-model.git"
   },
   "bugs": {
     "url": "https://github.com/festivals-platform/npm-festivals-model/issues"
@@ -47,5 +47,8 @@
   },
   "readmeFilename": "README.md",
   "_id": "festivals-model@0.1.3",
-  "_from": "festivals-model@^0.1.3"
+  "_from": "festivals-model@^0.1.3",
+  "directories": {
+    "test": "test"
+  }
 }
