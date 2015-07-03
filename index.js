@@ -109,10 +109,18 @@ module.exports = {
     /**
      * the place model and builder.
      * @property place
-     * @type eventPlace
+     * @type place
      * @static
      */
     place: require('./lib/model/response/place'),
+
+    /**
+     * the eventPlace model and builder.
+     * @property eventPlace
+     * @type eventPlace
+     * @static
+     */
+    eventPlace: require('./lib/model/response/eventPlace'),
 
     /**
      * the placesCollection model and builder.
@@ -129,6 +137,14 @@ module.exports = {
      * @static
      */
     category: require('./lib/model/response/category'),
+
+    /**
+     * the eventCategory model and builder.
+     * @property eventCategory
+     * @type eventCategory
+     * @static
+     */
+    eventCategory: require('./lib/model/response/eventCategory'),
 
     /**
      * the categoriesCollection model and builder.
