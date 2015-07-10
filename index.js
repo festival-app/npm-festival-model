@@ -152,7 +152,15 @@ module.exports = {
      * @type categoriesCollection
      * @static
      */
-    categoriesCollection: require('./lib/model/response/categoriesCollection')
+    categoriesCollection: require('./lib/model/response/categoriesCollection'),
+
+    /**
+     * the author model and builder.
+     * @property author
+     * @type author
+     * @static
+     */
+    author: require('./lib/model/response/author')
   },
 
   /**
