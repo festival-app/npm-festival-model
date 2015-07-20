@@ -7,25 +7,19 @@ describe('eventCategoryResponse model test', function () {
   var id = 'id';
   var name = 'name';
   var breadcrumbs = 'breadcrumbs';
-  var createdAt = 'createdAt';
-  var updatedAt = 'updatedAt';
 
   it('should create model', function (done) {
 
     var eventCategoryResponseModel = new eventCategoryResponse.EventCategoryResponse(
       id, 
       name, 
-      breadcrumbs, 
-      createdAt, 
-      updatedAt
+      breadcrumbs
     );
 
     should.exist(eventCategoryResponseModel);
     eventCategoryResponseModel.id.should.be.equal(id);
     eventCategoryResponseModel.name.should.be.equal(name);
     eventCategoryResponseModel.breadcrumbs.should.be.equal(breadcrumbs);
-    eventCategoryResponseModel.createdAt.should.be.equal(createdAt);
-    eventCategoryResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
   });
 
@@ -35,16 +29,12 @@ describe('eventCategoryResponse model test', function () {
       .withId(id)
       .withName(name)
       .withBreadcrumbs(breadcrumbs)
-      .withCreatedAt(createdAt)
-      .withUpdatedAt(updatedAt)
       .build();
 
     should.exist(eventCategoryResponseModel);
     eventCategoryResponseModel.id.should.be.equal(id);
     eventCategoryResponseModel.name.should.be.equal(name);
     eventCategoryResponseModel.breadcrumbs.should.be.equal(breadcrumbs);
-    eventCategoryResponseModel.createdAt.should.be.equal(createdAt);
-    eventCategoryResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
   });
 
