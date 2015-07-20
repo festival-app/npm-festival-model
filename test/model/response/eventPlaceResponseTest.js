@@ -8,7 +8,7 @@ describe('eventPlaceResponse model test', function () {
   var name = 'name';
   var breadcrumbs = 'breadcrumbs';
   var openingTimes = 'openingTimes';
-  var cordinates = 'cordinates';
+  var coordinates = 'coordinates';
 
   it('should create model', function (done) {
 
@@ -17,7 +17,7 @@ describe('eventPlaceResponse model test', function () {
       name, 
       breadcrumbs, 
       openingTimes, 
-      cordinates
+      coordinates
     );
 
     should.exist(eventPlaceResponseModel);
@@ -25,7 +25,7 @@ describe('eventPlaceResponse model test', function () {
     eventPlaceResponseModel.name.should.be.equal(name);
     eventPlaceResponseModel.breadcrumbs.should.be.equal(breadcrumbs);
     eventPlaceResponseModel.openingTimes.should.be.equal(openingTimes);
-    eventPlaceResponseModel.cordinates.should.be.equal(cordinates);
+    eventPlaceResponseModel.coordinates.should.be.equal(coordinates);
     done();
   });
 
@@ -36,7 +36,7 @@ describe('eventPlaceResponse model test', function () {
       .withName(name)
       .withBreadcrumbs(breadcrumbs)
       .withOpeningTimes(openingTimes)
-      .withCordinates(cordinates)
+      .withCoordinates(coordinates)
       .build();
 
     should.exist(eventPlaceResponseModel);
@@ -44,7 +44,7 @@ describe('eventPlaceResponse model test', function () {
     eventPlaceResponseModel.name.should.be.equal(name);
     eventPlaceResponseModel.breadcrumbs.should.be.equal(breadcrumbs);
     eventPlaceResponseModel.openingTimes.should.be.equal(openingTimes);
-    eventPlaceResponseModel.cordinates.should.be.equal(cordinates);
+    eventPlaceResponseModel.coordinates.should.be.equal(coordinates);
     done();
   });
 

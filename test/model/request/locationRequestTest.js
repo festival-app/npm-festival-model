@@ -10,7 +10,7 @@ describe('locationRequest model test', function () {
   var street = 'street';
   var zip = 'zip';
   var openingTimes = 'openingTimes';
-  var cordinates = 'cordinates';
+  var coordinates = 'coordinates';
 
   it('should create model', function (done) {
 
@@ -21,7 +21,7 @@ describe('locationRequest model test', function () {
       street, 
       zip, 
       openingTimes, 
-      cordinates
+      coordinates
     );
 
     should.exist(locationRequestModel);
@@ -31,7 +31,7 @@ describe('locationRequest model test', function () {
     locationRequestModel.street.should.be.equal(street);
     locationRequestModel.zip.should.be.equal(zip);
     locationRequestModel.openingTimes.should.be.equal(openingTimes);
-    locationRequestModel.cordinates.should.be.equal(cordinates);
+    locationRequestModel.coordinates.should.be.equal(coordinates);
     done();
   });
 
@@ -44,7 +44,7 @@ describe('locationRequest model test', function () {
       .withStreet(street)
       .withZip(zip)
       .withOpeningTimes(openingTimes)
-      .withCordinates(cordinates)
+      .withCoordinates(coordinates)
       .build();
 
     should.exist(locationRequestModel);
@@ -54,7 +54,7 @@ describe('locationRequest model test', function () {
     locationRequestModel.street.should.be.equal(street);
     locationRequestModel.zip.should.be.equal(zip);
     locationRequestModel.openingTimes.should.be.equal(openingTimes);
-    locationRequestModel.cordinates.should.be.equal(cordinates);
+    locationRequestModel.coordinates.should.be.equal(coordinates);
     done();
   });
 
