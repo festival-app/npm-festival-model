@@ -6,6 +6,7 @@ describe('festivalRequest model test', function () {
 
   var name = 'name';
   var description = 'description';
+  var type = 'type';
   var tags = 'tags';
   var images = 'images';
   var duration = 'duration';
@@ -16,6 +17,7 @@ describe('festivalRequest model test', function () {
     var festivalRequestModel = new festivalRequest.FestivalRequest(
       name, 
       description, 
+      type, 
       tags, 
       images, 
       duration, 
@@ -25,6 +27,7 @@ describe('festivalRequest model test', function () {
     should.exist(festivalRequestModel);
     festivalRequestModel.name.should.be.equal(name);
     festivalRequestModel.description.should.be.equal(description);
+    festivalRequestModel.type.should.be.equal(type);
     festivalRequestModel.tags.should.be.equal(tags);
     festivalRequestModel.images.should.be.equal(images);
     festivalRequestModel.duration.should.be.equal(duration);
@@ -37,6 +40,7 @@ describe('festivalRequest model test', function () {
     var festivalRequestModel = new festivalRequest.FestivalRequestBuilder()
       .withName(name)
       .withDescription(description)
+      .withType(type)
       .withTags(tags)
       .withImages(images)
       .withDuration(duration)
@@ -46,6 +50,7 @@ describe('festivalRequest model test', function () {
     should.exist(festivalRequestModel);
     festivalRequestModel.name.should.be.equal(name);
     festivalRequestModel.description.should.be.equal(description);
+    festivalRequestModel.type.should.be.equal(type);
     festivalRequestModel.tags.should.be.equal(tags);
     festivalRequestModel.images.should.be.equal(images);
     festivalRequestModel.duration.should.be.equal(duration);

@@ -7,6 +7,7 @@ describe('festivalResponse model test', function () {
   var id = 'id';
   var name = 'name';
   var description = 'description';
+  var type = 'type';
   var tags = 'tags';
   var mainImage = 'mainImage';
   var duration = 'duration';
@@ -20,6 +21,7 @@ describe('festivalResponse model test', function () {
       id, 
       name, 
       description, 
+      type, 
       tags, 
       mainImage, 
       duration, 
@@ -32,6 +34,7 @@ describe('festivalResponse model test', function () {
     festivalResponseModel.id.should.be.equal(id);
     festivalResponseModel.name.should.be.equal(name);
     festivalResponseModel.description.should.be.equal(description);
+    festivalResponseModel.type.should.be.equal(type);
     festivalResponseModel.tags.should.be.equal(tags);
     festivalResponseModel.mainImage.should.be.equal(mainImage);
     festivalResponseModel.duration.should.be.equal(duration);
@@ -47,6 +50,7 @@ describe('festivalResponse model test', function () {
       .withId(id)
       .withName(name)
       .withDescription(description)
+      .withType(type)
       .withTags(tags)
       .withMainImage(mainImage)
       .withDuration(duration)
@@ -59,6 +63,7 @@ describe('festivalResponse model test', function () {
     festivalResponseModel.id.should.be.equal(id);
     festivalResponseModel.name.should.be.equal(name);
     festivalResponseModel.description.should.be.equal(description);
+    festivalResponseModel.type.should.be.equal(type);
     festivalResponseModel.tags.should.be.equal(tags);
     festivalResponseModel.mainImage.should.be.equal(mainImage);
     festivalResponseModel.duration.should.be.equal(duration);
