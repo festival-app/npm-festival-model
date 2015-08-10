@@ -8,6 +8,7 @@ describe('placeRequest model test', function () {
   var parent = 'parent';
   var openingTimes = 'openingTimes';
   var coordinates = 'coordinates';
+  var images = 'images';
 
   it('should create model', function (done) {
 
@@ -15,7 +16,8 @@ describe('placeRequest model test', function () {
       name, 
       parent, 
       openingTimes, 
-      coordinates
+      coordinates, 
+      images
     );
 
     should.exist(placeRequestModel);
@@ -23,6 +25,7 @@ describe('placeRequest model test', function () {
     placeRequestModel.parent.should.be.equal(parent);
     placeRequestModel.openingTimes.should.be.equal(openingTimes);
     placeRequestModel.coordinates.should.be.equal(coordinates);
+    placeRequestModel.images.should.be.equal(images);
     done();
   });
 
@@ -33,6 +36,7 @@ describe('placeRequest model test', function () {
       .withParent(parent)
       .withOpeningTimes(openingTimes)
       .withCoordinates(coordinates)
+      .withImages(images)
       .build();
 
     should.exist(placeRequestModel);
@@ -40,6 +44,7 @@ describe('placeRequest model test', function () {
     placeRequestModel.parent.should.be.equal(parent);
     placeRequestModel.openingTimes.should.be.equal(openingTimes);
     placeRequestModel.coordinates.should.be.equal(coordinates);
+    placeRequestModel.images.should.be.equal(images);
     done();
   });
 

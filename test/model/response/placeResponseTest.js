@@ -9,6 +9,7 @@ describe('placeResponse model test', function () {
   var parent = 'parent';
   var openingTimes = 'openingTimes';
   var coordinates = 'coordinates';
+  var mainImage = 'mainImage';
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
 
@@ -20,6 +21,7 @@ describe('placeResponse model test', function () {
       parent, 
       openingTimes, 
       coordinates, 
+      mainImage, 
       createdAt, 
       updatedAt
     );
@@ -30,6 +32,7 @@ describe('placeResponse model test', function () {
     placeResponseModel.parent.should.be.equal(parent);
     placeResponseModel.openingTimes.should.be.equal(openingTimes);
     placeResponseModel.coordinates.should.be.equal(coordinates);
+    placeResponseModel.mainImage.should.be.equal(mainImage);
     placeResponseModel.createdAt.should.be.equal(createdAt);
     placeResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
@@ -43,6 +46,7 @@ describe('placeResponse model test', function () {
       .withParent(parent)
       .withOpeningTimes(openingTimes)
       .withCoordinates(coordinates)
+      .withMainImage(mainImage)
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
       .build();
@@ -53,6 +57,7 @@ describe('placeResponse model test', function () {
     placeResponseModel.parent.should.be.equal(parent);
     placeResponseModel.openingTimes.should.be.equal(openingTimes);
     placeResponseModel.coordinates.should.be.equal(coordinates);
+    placeResponseModel.mainImage.should.be.equal(mainImage);
     placeResponseModel.createdAt.should.be.equal(createdAt);
     placeResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
