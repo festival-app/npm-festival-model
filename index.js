@@ -7,6 +7,7 @@ module.exports = {
     FestivalPlaceNotFoundError: require('./lib/error/festivalPlaceNotFoundError').FestivalPlaceNotFoundError,
     FestivalCategoryNotFoundError: require('./lib/error/festivalCategoryNotFoundError').FestivalCategoryNotFoundError,
     FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
+    NewsNotFoundError: require('./lib/error/newsNotFoundError').NewsNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
   },
   model: {
@@ -49,6 +50,13 @@ module.exports = {
      * @static
      */
     searchFestivalCategoriesRequest: require('./lib/model/searchFestivalCategoriesRequest'),
+    /**
+     * the searchNewsRequest model and builder.
+     * @property searchNewsRequest
+     * @type searchNewsRequest
+     * @static
+     */
+    searchNewsRequest: require('./lib/model/searchNewsRequest'),
 
     /**
      * the authorResponse model and builder.
@@ -155,6 +163,22 @@ module.exports = {
     mainImageResponse: require('./lib/model/response/mainImageResponse'),
 
     /**
+     * the newsCollectionResponse model and builder.
+     * @property newsCollectionResponse
+     * @type newsCollectionResponse
+     * @static
+     */
+    newsCollectionResponse: require('./lib/model/response/newsCollectionResponse'),
+
+    /**
+     * the newsResponse model and builder.
+     * @property newsResponse
+     * @type newsResponse
+     * @static
+     */
+    newsResponse: require('./lib/model/response/newsResponse'),
+
+    /**
      * the placeResponse model and builder.
      * @property placeResponse
      * @type placeResponse
@@ -233,6 +257,14 @@ module.exports = {
      * @static
      */
     locationRequest: require('./lib/model/request/locationRequest'),
+
+    /**
+     * the newsRequest model and builder.
+     * @property newsRequest
+     * @type newsRequest
+     * @static
+     */
+    newsRequest: require('./lib/model/request/newsRequest'),
 
     /**
      * the placeRequest model and builder.

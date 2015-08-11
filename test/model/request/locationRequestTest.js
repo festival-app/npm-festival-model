@@ -8,6 +8,7 @@ describe('locationRequest model test', function () {
   var state = 'state';
   var country = 'country';
   var street = 'street';
+  var city = 'city';
   var zip = 'zip';
   var openingTimes = 'openingTimes';
   var coordinates = 'coordinates';
@@ -19,6 +20,7 @@ describe('locationRequest model test', function () {
       state, 
       country, 
       street, 
+      city, 
       zip, 
       openingTimes, 
       coordinates
@@ -29,6 +31,7 @@ describe('locationRequest model test', function () {
     locationRequestModel.state.should.be.equal(state);
     locationRequestModel.country.should.be.equal(country);
     locationRequestModel.street.should.be.equal(street);
+    locationRequestModel.city.should.be.equal(city);
     locationRequestModel.zip.should.be.equal(zip);
     locationRequestModel.openingTimes.should.be.equal(openingTimes);
     locationRequestModel.coordinates.should.be.equal(coordinates);
@@ -42,6 +45,7 @@ describe('locationRequest model test', function () {
       .withState(state)
       .withCountry(country)
       .withStreet(street)
+      .withCity(city)
       .withZip(zip)
       .withOpeningTimes(openingTimes)
       .withCoordinates(coordinates)
@@ -52,6 +56,7 @@ describe('locationRequest model test', function () {
     locationRequestModel.state.should.be.equal(state);
     locationRequestModel.country.should.be.equal(country);
     locationRequestModel.street.should.be.equal(street);
+    locationRequestModel.city.should.be.equal(city);
     locationRequestModel.zip.should.be.equal(zip);
     locationRequestModel.openingTimes.should.be.equal(openingTimes);
     locationRequestModel.coordinates.should.be.equal(coordinates);
