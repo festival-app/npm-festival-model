@@ -9,6 +9,7 @@ describe('searchFestivalCategoriesRequest model test', function () {
   var updatedAt = '14-01-1988';
   var limit = 11;
   var offset = 1;
+  var sort = 'sort';
 
   it('should create model', function (done) {
 
@@ -17,7 +18,8 @@ describe('searchFestivalCategoriesRequest model test', function () {
       parent,
       updatedAt,
       limit,
-      offset
+      offset,
+      sort
     );
 
     should.exist(model);
@@ -26,6 +28,7 @@ describe('searchFestivalCategoriesRequest model test', function () {
     model.updatedAt.should.be.equal(updatedAt);
     model.limit.should.be.equal(limit);
     model.offset.should.be.equal(offset);
+    model.sort.should.be.equal(sort);
 
     done();
   });
@@ -38,6 +41,7 @@ describe('searchFestivalCategoriesRequest model test', function () {
       .withUpdatedAt(updatedAt)
       .withLimit(limit)
       .withOffset(offset)
+      .withSort(sort)
       .build();
 
     should.exist(model);
@@ -46,6 +50,7 @@ describe('searchFestivalCategoriesRequest model test', function () {
     model.updatedAt.should.be.equal(updatedAt);
     model.limit.should.be.equal(limit);
     model.offset.should.be.equal(offset);
+    model.sort.should.be.equal(sort);
 
     done();
   });
