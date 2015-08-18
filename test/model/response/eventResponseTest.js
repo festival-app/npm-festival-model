@@ -8,6 +8,7 @@ describe('eventResponse model test', function () {
   var name = 'name';
   var description = 'description';
   var tags = 'tags';
+  var status = 'status';
   var mainImage = 'mainImage';
   var duration = 'duration';
   var place = 'place';
@@ -23,6 +24,7 @@ describe('eventResponse model test', function () {
       name, 
       description, 
       tags, 
+      status, 
       mainImage, 
       duration, 
       place, 
@@ -37,6 +39,7 @@ describe('eventResponse model test', function () {
     eventResponseModel.name.should.be.equal(name);
     eventResponseModel.description.should.be.equal(description);
     eventResponseModel.tags.should.be.equal(tags);
+    eventResponseModel.status.should.be.equal(status);
     eventResponseModel.mainImage.should.be.equal(mainImage);
     eventResponseModel.duration.should.be.equal(duration);
     eventResponseModel.place.should.be.equal(place);
@@ -54,6 +57,7 @@ describe('eventResponse model test', function () {
       .withName(name)
       .withDescription(description)
       .withTags(tags)
+      .withStatus(status)
       .withMainImage(mainImage)
       .withDuration(duration)
       .withPlace(place)
@@ -68,6 +72,7 @@ describe('eventResponse model test', function () {
     eventResponseModel.name.should.be.equal(name);
     eventResponseModel.description.should.be.equal(description);
     eventResponseModel.tags.should.be.equal(tags);
+    eventResponseModel.status.should.be.equal(status);
     eventResponseModel.mainImage.should.be.equal(mainImage);
     eventResponseModel.duration.should.be.equal(duration);
     eventResponseModel.place.should.be.equal(place);

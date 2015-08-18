@@ -7,6 +7,7 @@ describe('eventRequest model test', function () {
   var name = 'name';
   var description = 'description';
   var tags = 'tags';
+  var status = 'status';
   var metadata = 'metadata';
   var images = 'images';
   var duration = 'duration';
@@ -20,6 +21,7 @@ describe('eventRequest model test', function () {
       name, 
       description, 
       tags, 
+      status, 
       metadata, 
       images, 
       duration, 
@@ -32,6 +34,7 @@ describe('eventRequest model test', function () {
     eventRequestModel.name.should.be.equal(name);
     eventRequestModel.description.should.be.equal(description);
     eventRequestModel.tags.should.be.equal(tags);
+    eventRequestModel.status.should.be.equal(status);
     eventRequestModel.metadata.should.be.equal(metadata);
     eventRequestModel.images.should.be.equal(images);
     eventRequestModel.duration.should.be.equal(duration);
@@ -47,6 +50,7 @@ describe('eventRequest model test', function () {
       .withName(name)
       .withDescription(description)
       .withTags(tags)
+      .withStatus(status)
       .withMetadata(metadata)
       .withImages(images)
       .withDuration(duration)
@@ -59,6 +63,7 @@ describe('eventRequest model test', function () {
     eventRequestModel.name.should.be.equal(name);
     eventRequestModel.description.should.be.equal(description);
     eventRequestModel.tags.should.be.equal(tags);
+    eventRequestModel.status.should.be.equal(status);
     eventRequestModel.metadata.should.be.equal(metadata);
     eventRequestModel.images.should.be.equal(images);
     eventRequestModel.duration.should.be.equal(duration);
