@@ -7,6 +7,7 @@ module.exports = {
     FestivalPlaceNotFoundError: require('./lib/error/festivalPlaceNotFoundError').FestivalPlaceNotFoundError,
     FestivalCategoryNotFoundError: require('./lib/error/festivalCategoryNotFoundError').FestivalCategoryNotFoundError,
     FestivalNotFoundError: require('./lib/error/festivalNotFoundError').FestivalNotFoundError,
+    NewsNotFoundError: require('./lib/error/newsNotFoundError').NewsNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
   },
   model: {
@@ -17,6 +18,34 @@ module.exports = {
      * @static
      */
     countryEnum: require('./lib/model/countryEnum'),
+    /**
+     * the eventStatusEnum model and builder.
+     * @property eventStatusEnum
+     * @type eventStatusEnum
+     * @static
+     */
+    eventStatusEnum: require('./lib/model/eventStatusEnum'),
+    /**
+     * the festivalStatusEnum model and builder.
+     * @property festivalStatusEnum
+     * @type festivalStatusEnum
+     * @static
+     */
+    festivalStatusEnum: require('./lib/model/festivalStatusEnum'),
+    /**
+     * the festivalTypeEnum model and builder.
+     * @property festivalTypeEnum
+     * @type festivalTypeEnum
+     * @static
+     */
+    festivalTypeEnum: require('./lib/model/festivalTypeEnum'),
+    /**
+     * the newsStatusEnum model and builder.
+     * @property newsStatusEnum
+     * @type newsStatusEnum
+     * @static
+     */
+    newsStatusEnum: require('./lib/model/newsStatusEnum'),
 
     /**
      * the searchFestivalsRequest model and builder.
@@ -49,110 +78,230 @@ module.exports = {
      * @static
      */
     searchFestivalCategoriesRequest: require('./lib/model/searchFestivalCategoriesRequest'),
-
     /**
-     * the duration model and builder.
-     * @property duration
-     * @type duration
+     * the searchNewsRequest model and builder.
+     * @property searchNewsRequest
+     * @type searchNewsRequest
      * @static
      */
-    duration: require('./lib/model/response/duration'),
+    searchNewsRequest: require('./lib/model/searchNewsRequest'),
 
     /**
-     * the event model and builder.
-     * @property event
-     * @type event
+     * the authorResponse model and builder.
+     * @property authorResponse
+     * @type authorResponse
      * @static
      */
-    event: require('./lib/model/response/event'),
+    authorResponse: require('./lib/model/response/authorResponse'),
 
     /**
-     * the events collection model and builder.
-     * @property event collection
-     * @type event collection
+     * the categoriesCollectionResponse model and builder.
+     * @property categoriesCollectionResponse
+     * @type categoriesCollectionResponse
      * @static
      */
-    eventsCollection: require('./lib/model/response/eventsCollection'),
+    categoriesCollectionResponse: require('./lib/model/response/categoriesCollectionResponse'),
 
     /**
-     * the festival model and builder.
-     * @property festival
-     * @type festival
+     * the categoryResponse model and builder.
+     * @property categoryResponse
+     * @type categoryResponse
      * @static
      */
-    festival: require('./lib/model/response/festival'),
+    categoryResponse: require('./lib/model/response/categoryResponse'),
 
     /**
-     * the festivalsCollection model and builder.
-     * @property festivalsCollection
-     * @type festivalsCollection
+     * the coordinatesResponse model and builder.
+     * @property coordinatesResponse
+     * @type coordinatesResponse
      * @static
      */
-    festivalsCollection: require('./lib/model/response/festivalsCollection'),
+    coordinatesResponse: require('./lib/model/response/coordinatesResponse'),
 
     /**
-     * the image model and builder.
-     * @property image
-     * @type image
+     * the durationResponse model and builder.
+     * @property durationResponse
+     * @type durationResponse
      * @static
      */
-    image: require('./lib/model/response/image'),
+    durationResponse: require('./lib/model/response/durationResponse'),
 
     /**
-     * the location model and builder.
-     * @property location
-     * @type location
+     * the eventCategoryResponse model and builder.
+     * @property eventCategoryResponse
+     * @type eventCategoryResponse
      * @static
      */
-    location: require('./lib/model/response/location'),
+    eventCategoryResponse: require('./lib/model/response/eventCategoryResponse'),
 
     /**
-     * the place model and builder.
-     * @property place
-     * @type place
+     * the eventPlaceResponse model and builder.
+     * @property eventPlaceResponse
+     * @type eventPlaceResponse
      * @static
      */
-    place: require('./lib/model/response/place'),
+    eventPlaceResponse: require('./lib/model/response/eventPlaceResponse'),
 
     /**
-     * the eventPlace model and builder.
-     * @property eventPlace
-     * @type eventPlace
+     * the eventResponse model and builder.
+     * @property eventResponse
+     * @type eventResponse
      * @static
      */
-    eventPlace: require('./lib/model/response/eventPlace'),
+    eventResponse: require('./lib/model/response/eventResponse'),
 
     /**
-     * the placesCollection model and builder.
-     * @property placesCollection
-     * @type placesCollection
+     * the eventsCollectionResponse model and builder.
+     * @property eventsCollectionResponse
+     * @type eventsCollectionResponse
      * @static
      */
-    placesCollection: require('./lib/model/response/placesCollection'),
+    eventsCollectionResponse: require('./lib/model/response/eventsCollectionResponse'),
 
     /**
-     * the category model and builder.
-     * @property category
-     * @type category
+     * the festivalResponse model and builder.
+     * @property festivalResponse
+     * @type festivalResponse
      * @static
      */
-    category: require('./lib/model/response/category'),
+    festivalResponse: require('./lib/model/response/festivalResponse'),
 
     /**
-     * the eventCategory model and builder.
-     * @property eventCategory
-     * @type eventCategory
+     * the festivalsCollectionResponse model and builder.
+     * @property festivalsCollectionResponse
+     * @type festivalsCollectionResponse
      * @static
      */
-    eventCategory: require('./lib/model/response/eventCategory'),
+    festivalsCollectionResponse: require('./lib/model/response/festivalsCollectionResponse'),
 
     /**
-     * the categoriesCollection model and builder.
-     * @property categoriesCollection
-     * @type categoriesCollection
+     * the locationResponse model and builder.
+     * @property locationResponse
+     * @type locationResponse
      * @static
      */
-    categoriesCollection: require('./lib/model/response/categoriesCollection')
+    locationResponse: require('./lib/model/response/locationResponse'),
+
+    /**
+     * the mainImageResponse model and builder.
+     * @property mainImageResponse
+     * @type mainImageResponse
+     * @static
+     */
+    mainImageResponse: require('./lib/model/response/mainImageResponse'),
+
+    /**
+     * the newsCollectionResponse model and builder.
+     * @property newsCollectionResponse
+     * @type newsCollectionResponse
+     * @static
+     */
+    newsCollectionResponse: require('./lib/model/response/newsCollectionResponse'),
+
+    /**
+     * the newsResponse model and builder.
+     * @property newsResponse
+     * @type newsResponse
+     * @static
+     */
+    newsResponse: require('./lib/model/response/newsResponse'),
+
+    /**
+     * the placeResponse model and builder.
+     * @property placeResponse
+     * @type placeResponse
+     * @static
+     */
+    placeResponse: require('./lib/model/response/placeResponse'),
+
+    /**
+     * the placesCollectionResponse model and builder.
+     * @property placesCollectionResponse
+     * @type placesCollectionResponse
+     * @static
+     */
+    placesCollectionResponse: require('./lib/model/response/placesCollectionResponse'),
+
+    /**
+     * the authorRequest model and builder.
+     * @property authorRequest
+     * @type authorRequest
+     * @static
+     */
+    authorRequest: require('./lib/model/request/authorRequest'),
+
+    /**
+     * the categoryRequest model and builder.
+     * @property categoryRequest
+     * @type categoryRequest
+     * @static
+     */
+    categoryRequest: require('./lib/model/request/categoryRequest'),
+
+    /**
+     * the coordinatesRequest model and builder.
+     * @property coordinatesRequest
+     * @type coordinatesRequest
+     * @static
+     */
+    coordinatesRequest: require('./lib/model/request/coordinatesRequest'),
+
+    /**
+     * the durationRequest model and builder.
+     * @property durationRequest
+     * @type durationRequest
+     * @static
+     */
+    durationRequest: require('./lib/model/request/durationRequest'),
+
+    /**
+     * the eventRequest model and builder.
+     * @property eventRequest
+     * @type eventRequest
+     * @static
+     */
+    eventRequest: require('./lib/model/request/eventRequest'),
+
+    /**
+     * the festivalRequest model and builder.
+     * @property festivalRequest
+     * @type festivalRequest
+     * @static
+     */
+    festivalRequest: require('./lib/model/request/festivalRequest'),
+
+    /**
+     * the imageRequest model and builder.
+     * @property imageRequest
+     * @type imageRequest
+     * @static
+     */
+    imageRequest: require('./lib/model/request/imageRequest'),
+
+    /**
+     * the locationRequest model and builder.
+     * @property locationRequest
+     * @type locationRequest
+     * @static
+     */
+    locationRequest: require('./lib/model/request/locationRequest'),
+
+    /**
+     * the newsRequest model and builder.
+     * @property newsRequest
+     * @type newsRequest
+     * @static
+     */
+    newsRequest: require('./lib/model/request/newsRequest'),
+
+    /**
+     * the placeRequest model and builder.
+     * @property placeRequest
+     * @type placeRequest
+     * @static
+     */
+    placeRequest: require('./lib/model/request/placeRequest')
+
   },
 
   /**

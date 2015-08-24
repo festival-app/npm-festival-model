@@ -12,6 +12,7 @@ describe('searchFestivalEventsRequest model test', function () {
   var category = 'category';
   var limit = 11;
   var offset = 1;
+  var sort = 'sort';
 
   it('should create model', function (done) {
 
@@ -23,7 +24,8 @@ describe('searchFestivalEventsRequest model test', function () {
       updatedAt,
       category,
       limit,
-      offset
+      offset,
+      sort
     );
 
     should.exist(model);
@@ -35,6 +37,7 @@ describe('searchFestivalEventsRequest model test', function () {
     model.category.should.be.equal(category);
     model.limit.should.be.equal(limit);
     model.offset.should.be.equal(offset);
+    model.sort.should.be.equal(sort);
 
     done();
   });
@@ -50,6 +53,7 @@ describe('searchFestivalEventsRequest model test', function () {
       .withCategory(category)
       .withLimit(limit)
       .withOffset(offset)
+      .withSort(sort)
       .build();
 
     should.exist(model);
@@ -61,6 +65,7 @@ describe('searchFestivalEventsRequest model test', function () {
     model.category.should.be.equal(category);
     model.limit.should.be.equal(limit);
     model.offset.should.be.equal(offset);
+    model.sort.should.be.equal(sort);
 
     done();
   });
