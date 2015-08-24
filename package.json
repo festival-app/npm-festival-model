@@ -1,6 +1,6 @@
 {
   "name": "festivals-model",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Festival app models.",
   "main": "./index.js",
   "dependencies": {
@@ -46,8 +46,8 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "festivals-model@0.1.6",
-  "_from": "festivals-model@^0.1.6",
+  "_id": "festivals-model@0.1.7",
+  "_from": "festivals-model@^0.1.7",
   "directories": {
     "test": "test"
   }
