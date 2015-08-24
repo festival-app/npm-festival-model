@@ -18,6 +18,34 @@ module.exports = {
      * @static
      */
     countryEnum: require('./lib/model/countryEnum'),
+    /**
+     * the eventStatusEnum model and builder.
+     * @property eventStatusEnum
+     * @type eventStatusEnum
+     * @static
+     */
+    eventStatusEnum: require('./lib/model/eventStatusEnum'),
+    /**
+     * the festivalStatusEnum model and builder.
+     * @property festivalStatusEnum
+     * @type festivalStatusEnum
+     * @static
+     */
+    festivalStatusEnum: require('./lib/model/festivalStatusEnum'),
+    /**
+     * the festivalTypeEnum model and builder.
+     * @property festivalTypeEnum
+     * @type festivalTypeEnum
+     * @static
+     */
+    festivalTypeEnum: require('./lib/model/festivalTypeEnum'),
+    /**
+     * the newsStatusEnum model and builder.
+     * @property newsStatusEnum
+     * @type newsStatusEnum
+     * @static
+     */
+    newsStatusEnum: require('./lib/model/newsStatusEnum'),
 
     /**
      * the searchFestivalsRequest model and builder.

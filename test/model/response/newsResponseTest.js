@@ -7,9 +7,11 @@ describe('newsResponse model test', function () {
   var id = 'id';
   var name = 'name';
   var description = 'description';
+  var status = 'status';
   var mainImage = 'mainImage';
   var authors = 'authors';
   var tags = 'tags';
+  var publishedAt = 'publishedAt';
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
 
@@ -19,9 +21,11 @@ describe('newsResponse model test', function () {
       id, 
       name, 
       description, 
+      status, 
       mainImage, 
       authors, 
       tags, 
+      publishedAt, 
       createdAt, 
       updatedAt
     );
@@ -30,9 +34,11 @@ describe('newsResponse model test', function () {
     newsResponseModel.id.should.be.equal(id);
     newsResponseModel.name.should.be.equal(name);
     newsResponseModel.description.should.be.equal(description);
+    newsResponseModel.status.should.be.equal(status);
     newsResponseModel.mainImage.should.be.equal(mainImage);
     newsResponseModel.authors.should.be.equal(authors);
     newsResponseModel.tags.should.be.equal(tags);
+    newsResponseModel.publishedAt.should.be.equal(publishedAt);
     newsResponseModel.createdAt.should.be.equal(createdAt);
     newsResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
@@ -44,9 +50,11 @@ describe('newsResponse model test', function () {
       .withId(id)
       .withName(name)
       .withDescription(description)
+      .withStatus(status)
       .withMainImage(mainImage)
       .withAuthors(authors)
       .withTags(tags)
+      .withPublishedAt(publishedAt)
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
       .build();
@@ -55,9 +63,11 @@ describe('newsResponse model test', function () {
     newsResponseModel.id.should.be.equal(id);
     newsResponseModel.name.should.be.equal(name);
     newsResponseModel.description.should.be.equal(description);
+    newsResponseModel.status.should.be.equal(status);
     newsResponseModel.mainImage.should.be.equal(mainImage);
     newsResponseModel.authors.should.be.equal(authors);
     newsResponseModel.tags.should.be.equal(tags);
+    newsResponseModel.publishedAt.should.be.equal(publishedAt);
     newsResponseModel.createdAt.should.be.equal(createdAt);
     newsResponseModel.updatedAt.should.be.equal(updatedAt);
     done();

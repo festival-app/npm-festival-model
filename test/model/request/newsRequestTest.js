@@ -6,6 +6,7 @@ describe('newsRequest model test', function () {
 
   var name = 'name';
   var description = 'description';
+  var status = 'status';
   var images = 'images';
   var authors = 'authors';
   var tags = 'tags';
@@ -15,6 +16,7 @@ describe('newsRequest model test', function () {
     var newsRequestModel = new newsRequest.NewsRequest(
       name, 
       description, 
+      status, 
       images, 
       authors, 
       tags
@@ -23,6 +25,7 @@ describe('newsRequest model test', function () {
     should.exist(newsRequestModel);
     newsRequestModel.name.should.be.equal(name);
     newsRequestModel.description.should.be.equal(description);
+    newsRequestModel.status.should.be.equal(status);
     newsRequestModel.images.should.be.equal(images);
     newsRequestModel.authors.should.be.equal(authors);
     newsRequestModel.tags.should.be.equal(tags);
@@ -34,6 +37,7 @@ describe('newsRequest model test', function () {
     var newsRequestModel = new newsRequest.NewsRequestBuilder()
       .withName(name)
       .withDescription(description)
+      .withStatus(status)
       .withImages(images)
       .withAuthors(authors)
       .withTags(tags)
@@ -42,6 +46,7 @@ describe('newsRequest model test', function () {
     should.exist(newsRequestModel);
     newsRequestModel.name.should.be.equal(name);
     newsRequestModel.description.should.be.equal(description);
+    newsRequestModel.status.should.be.equal(status);
     newsRequestModel.images.should.be.equal(images);
     newsRequestModel.authors.should.be.equal(authors);
     newsRequestModel.tags.should.be.equal(tags);

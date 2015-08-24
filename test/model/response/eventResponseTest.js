@@ -14,6 +14,7 @@ describe('eventResponse model test', function () {
   var place = 'place';
   var category = 'category';
   var authors = 'authors';
+  var publishedAt = 'publishedAt';
   var createdAt = 'createdAt';
   var updatedAt = 'updatedAt';
 
@@ -30,6 +31,7 @@ describe('eventResponse model test', function () {
       place, 
       category, 
       authors, 
+      publishedAt, 
       createdAt, 
       updatedAt
     );
@@ -45,6 +47,7 @@ describe('eventResponse model test', function () {
     eventResponseModel.place.should.be.equal(place);
     eventResponseModel.category.should.be.equal(category);
     eventResponseModel.authors.should.be.equal(authors);
+    eventResponseModel.publishedAt.should.be.equal(publishedAt);
     eventResponseModel.createdAt.should.be.equal(createdAt);
     eventResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
@@ -63,6 +66,7 @@ describe('eventResponse model test', function () {
       .withPlace(place)
       .withCategory(category)
       .withAuthors(authors)
+      .withPublishedAt(publishedAt)
       .withCreatedAt(createdAt)
       .withUpdatedAt(updatedAt)
       .build();
@@ -78,6 +82,7 @@ describe('eventResponse model test', function () {
     eventResponseModel.place.should.be.equal(place);
     eventResponseModel.category.should.be.equal(category);
     eventResponseModel.authors.should.be.equal(authors);
+    eventResponseModel.publishedAt.should.be.equal(publishedAt);
     eventResponseModel.createdAt.should.be.equal(createdAt);
     eventResponseModel.updatedAt.should.be.equal(updatedAt);
     done();
