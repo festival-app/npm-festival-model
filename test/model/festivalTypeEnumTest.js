@@ -4,12 +4,12 @@ var FestivalTypeEnum = require('../../lib/model/festivalTypeEnum').FestivalTypeE
 
 describe('country enum test', function () {
 
-  it('should get WOODSTOCK from enum', function (done) {
+  it('should get MUSIC from enum', function (done) {
 
-    var enumValue = FestivalTypeEnum.getType('WOODSTOCK');
+    var enumValue = FestivalTypeEnum.getType('MUSIC');
 
     should.exist(enumValue);
-    enumValue.should.be.equal('WOODSTOCK');
+    enumValue.should.be.equal('MUSIC');
 
     done();
   });
