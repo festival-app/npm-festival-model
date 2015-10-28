@@ -1,13 +1,15 @@
 # festivals-model
 [![npm version](https://badge.fury.io/js/festivals-model.svg)](http://badge.fury.io/js/festivals-model)
-[![Coverage Status](https://coveralls.io/repos/festivals-platform/npm-festivals-model/badge.svg?branch=master)](https://coveralls.io/r/festivals-platform/npm-festivals-model?branch=master)
+[![bitHound Score](https://www.bithound.io/github/festivals-tech/npm-festivals-model/badges/score.svg)](https://www.bithound.io/github/festivals-tech/npm-festivals-model)
+[![Coverage Status](https://coveralls.io/repos/festivals-tech/npm-festivals-model/badge.svg?branch=master&service=github)](https://coveralls.io/github/festivals-tech/npm-festivals-model?branch=master)
 [![Build Status](https://travis-ci.org/festivals-platform/npm-festivals-model.svg?branch=master)](https://travis-ci.org/festivals-platform/npm-festivals-model)
 [![Codeship Build Status](https://codeship.com/projects/0d2f22d0-d89f-0132-0797-56577b4e3777/status)](https://codeship.com/projects/78888)
-[![Dependency Status](https://david-dm.org/festivals-platform/npm-festivals-model.svg)](https://david-dm.org/festivals-platform/npm-festivals-model)
+[![Dependency Status](https://david-dm.org/festivals-tech/npm-festivals-model.svg)](https://david-dm.org/festivals-tech/npm-festivals-model)
+[![devDependency Status](https://david-dm.org/festivals-tech/npm-festivals-model/dev-status.svg)](https://david-dm.org/festivals-tech/npm-festivals-model#info=devDependencies)
 
 [![NPM](https://nodei.co/npm/festivals-model.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/festivals-model/)
 
-Festival app models.
+Festivals app models.
 
 ## Installation
 
