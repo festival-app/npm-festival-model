@@ -1,17 +1,17 @@
 {
   "name": "festivals-model",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Festivals app models.",
   "main": "./index.js",
   "dependencies": {
-    "assert-plus": "^0.1.5",
+    "assert-plus": "^0.2.0",
     "async": "^1.5.0"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
-    "config": "^1.16.0",
-    "istanbul": "^0.4.0",
-    "mocha": "^2.3.3",
+    "chai": "^3.4.1",
+    "config": "^1.17.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
     "type-detect": "^1.0.0"
   },
   "scripts": {
@@ -43,8 +43,8 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "festivals-model@0.1.9",
-  "_from": "festivals-model@^0.1.9",
+  "_id": "festivals-model@0.1.10",
+  "_from": "festivals-model@^0.1.10",
   "directories": {
     "test": "test"
   }
