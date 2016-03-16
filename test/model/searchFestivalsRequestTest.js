@@ -7,6 +7,7 @@ describe('searchFestivalsRequest model test', function () {
   var name = 'name';
   var description = 'description';
   var type = 'type';
+  var status = 'status';
   var dateFrom = 'dateFrom';
   var dateTo = 'dateTo';
   var locationCountry = 'locationCountry';
@@ -24,6 +25,7 @@ describe('searchFestivalsRequest model test', function () {
       name,
       description,
       type,
+      status,
       dateFrom,
       dateTo,
       locationCountry,
@@ -40,6 +42,7 @@ describe('searchFestivalsRequest model test', function () {
     model.name.should.be.equal(name);
     model.description.should.be.equal(description);
     model.type.should.be.equal(type);
+    model.status.should.be.equal(status);
     model.dateFrom.should.be.equal(dateFrom);
     model.dateTo.should.be.equal(dateTo);
     model.locationCountry.should.be.equal(locationCountry);
@@ -60,6 +63,7 @@ describe('searchFestivalsRequest model test', function () {
       .withName(name)
       .withDescription(description)
       .withType(type)
+      .withStatus(status)
       .withDateFrom(dateFrom)
       .withDateTo(dateTo)
       .withLocationCountry(locationCountry)
@@ -76,6 +80,7 @@ describe('searchFestivalsRequest model test', function () {
     model.name.should.be.equal(name);
     model.description.should.be.equal(description);
     model.type.should.be.equal(type);
+    model.status.should.be.equal(status);
     model.dateFrom.should.be.equal(dateFrom);
     model.dateTo.should.be.equal(dateTo);
     model.locationCountry.should.be.equal(locationCountry);
