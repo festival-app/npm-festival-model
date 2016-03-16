@@ -1,6 +1,6 @@
 {
   "name": "festivals-model",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Festivals app models.",
   "main": "./index.js",
   "dependencies": {
@@ -40,11 +40,11 @@
   "license": "MIT",
   "homepage": "https://github.com/festivals-tech/npm-festivals-model",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=5.8.0"
   },
   "readmeFilename": "README.md",
-  "_id": "festivals-model@1.0.0",
-  "_from": "festivals-model@^1.0.0",
+  "_id": "festivals-model@1.0.1",
+  "_from": "festivals-model@^1.0.1",
   "directories": {
     "test": "test"
   }
