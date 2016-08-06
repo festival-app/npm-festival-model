@@ -2,7 +2,7 @@ var chai = require('chai');
 var should = chai.should();
 var FestivalTypeEnum = require('../../lib/model/festivalTypeEnum').FestivalTypeEnum;
 
-describe('country enum test', function () {
+describe('festival type enum test', function () {
 
   it('should get MUSIC from enum', function (done) {
 
@@ -10,6 +10,26 @@ describe('country enum test', function () {
 
     should.exist(enumValue);
     enumValue.should.be.equal('MUSIC');
+
+    done();
+  });
+
+  it('should get FANTASY from enum', function (done) {
+
+    var enumValue = FestivalTypeEnum.getType('FANTASY');
+
+    should.exist(enumValue);
+    enumValue.should.be.equal('FANTASY');
+
+    done();
+  });
+
+  it('should get MOBILIZATION from enum', function (done) {
+
+    var enumValue = FestivalTypeEnum.getType('MOBILIZATION');
+
+    should.exist(enumValue);
+    enumValue.should.be.equal('MOBILIZATION');
 
     done();
   });
